@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToyyaStore - Pusat Komputer & Laptop Terlengkap</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-microchip"></i> Toyya<span>Store</span>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#hero" class="nav-link active">Beranda</a>
+                <a href="#katalog" class="nav-link">Katalog Produk</a>
+                <a href="#layanan" class="nav-link">Layanan</a>
+                <a href="#tentang" class="nav-link">Tentang Kami</a>
+                <a href="#kontak" class="nav-link">Kontak</a>
+            </nav>
+
+            <div class="nav-actions">
+                <div class="cart-icon" id="cart-icon">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="cart-badge" id="cart-count">0</span>
+                </div>
+                <button class="mobile-toggle" id="mobile-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="container hero-container">
+            <div class="hero-text">
+                <span class="badge">Toko Komputer Terpercaya & Bergaransi</span>
+                <h1>Upgrade Performa Digital Anda Bersama <span>ToyyaStore</span></h1>
+                <p>Menyediakan PC Gaming, Laptop Kerja, Komponen Komputer, serta Aksesori Lengkap dengan Harga Terbaik dan Garansi Resmi.</p>
+                <div class="hero-btns">
+                    <a href="#katalog" class="btn btn-primary">Lihat Katalog <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="https://wa.me/6281234567890?text=Halo%20ToyyaStore,%20saya%20ingin%20konsultasi%20rakit%20PC" target="_blank" class="btn btn-outline"><i class="fa-brands fa-whatsapp"></i> Konsultasi Rakit PC</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=800&q=80" alt="PC Gaming Setup">
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter & Katalog Produk -->
+    <section class="katalog" id="katalog">
+        <div class="container">
+            <div class="section-title">
+                <h2>Katalog Produk Pilihan</h2>
+                <p>Temukan produk hardware dan laptop berkualitas sesuai kebutuhan Anda.</p>
+            </div>
+
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Semua Produk</button>
+                <button class="filter-btn" data-filter="laptop">Laptop</button>
+                <button class="filter-btn" data-filter="pc">PC Workstation/Gaming</button>
+                <button class="filter-btn" data-filter="component">Komponen PC</button>
+                <button class="filter-btn" data-filter="accessory">Aksesori</button>
+            </div>
+
+            <div class="product-grid" id="product-grid">
+                <!-- Data produk di-generate via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Layanan Section -->
+    <section class="layanan" id="layanan">
+        <div class="container">
+            <div class="section-title">
+                <h2>Layanan Unggulan</h2>
+                <p>Kami tidak hanya menjual hardware, tetapi juga memberikan solusi komputasi lengkap.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                    <h3>Jasa Rakit PC Custom</h3>
+                    <p>Rakit PC Gaming atau Workstation disesuaikan dengan budget dan kebutuhan spesifikasi Anda.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-headset"></i></div>
+                    <h3>Servis & Maintenance</h3>
+                    <p>Pembersihan debu, penggantian thermal paste, install ulang OS, hingga pemulihan data.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h3>Garansi Resmi</h3>
+                    <p>Semua produk yang dipasarkan 100% original dan dilengkapi garansi resmi pabrikan.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tentang Kami -->
+    <section class="tentang" id="tentang">
+        <div class="container tentang-container">
+            <div class="tentang-image">
+                <img src="https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?auto=format&fit=crop&w=800&q=80" alt="Komponen Komputer">
+            </div>
+            <div class="tentang-text">
+                <h2>Solusi Teknologi Terpercaya di ToyyaStore</h2>
+                <p>ToyyaStore hadir sebagai pusat penyedia kebutuhan teknologi informasi, komputasi, dan perangkat keras berkualitas tinggi.</p>
+                <p>Kami berkomitmen menyajikan produk asli bergaransi resmi serta layanan perakitan dan konsultasi teknis bagi pelajar, profesional, hingga gamer.</p>
+                <ul class="check-list">
+                    <li><i class="fa-solid fa-circle-check"></i> Produk 100% Original & Bergaransi</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Pelayanan Konsultasi Spesifikasi Gratis</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Pengiriman Aman ke Seluruh Indonesia</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontak & Lokasi -->
+    <section class="kontak" id="kontak">
+        <div class="container">
+            <div class="section-title">
+                <h2>Hubungi Kami</h2>
+                <p>Punya pertanyaan atau ingin berkonsultasi? Silakan hubungi tim ToyyaStore.</p>
+            </div>
+            <div class="kontak-grid">
+                <div class="kontak-info">
+                    <div class="info-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+                            <h4>Alamat Toko</h4>
+                            <p>Jl. Raya Pahlawan No. 45, Magelang, Jawa Tengah</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div>
+                            <h4>Email Support</h4>
+                            <p>info@toyyastore.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <div>
+                            <h4>WhatsApp / Telepon</h4>
+                            <p>+62 812-3456-7890</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="kontak-form" id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nama Lengkap</label>
+                        <input type="text" id="name" required placeholder="Masukkan nama Anda">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required placeholder="Masukkan email Anda">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Pesan / Pertanyaan</label>
+                        <textarea id="message" rows="4" required placeholder="Tuliskan pesan Anda di sini..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Kirim Pesan</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Keranjang Belanja -->
+    <div class="modal" id="cart-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Keranjang Belanja</h3>
+                <span class="close-modal" id="close-modal">&times;</span>
+            </div>
+            <div class="modal-body" id="cart-items"></div>
+            <div class="modal-footer">
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <strong id="cart-total-price">Rp 0</strong>
+                </div>
+                <button class="btn btn-primary btn-block" id="checkout-btn"><i class="fa-brands fa-whatsapp"></i> Checkout via WhatsApp</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-container">
+            <p>&copy; 2026 ToyyaStore. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
